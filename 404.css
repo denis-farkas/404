@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.container section {
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    background-image: url("1.jpg");
+    height: 100vh;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.container section:nth-child(2) {
+    background-image: url("3.jpg");
+    height: 100vh;
+    /* You must set a specified height */
+
+}
+
+
+h2 {
+    clear: both;
+    font-family: 'Patua One', serif;
+    letter-spacing: 2px;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        color: #fff;
+        text-shadow: 0 0 10px rgba(230, 112, 15, 0.911),
+        0 0 20px rgba(230, 112, 15, 0.911),
+        0 0 50px rgba(230, 112, 15, 0.911),
+        0 0 60px rgba(230, 112, 15, 0.911),
+        0 0 70px rgba(230, 112, 15, 0.911),
+        0 0 90px rgba(230, 112, 15, 0.911);
+    }
+
+    to {
+        color: gray;
+        text-shadow: 0 0 20p rgba(230, 112, 15, 0.911),
+        0 0 30px rgba(230, 112, 15, 0.911),
+        0 0 40px rgba(230, 112, 15, 0.911),
+        0 0 50px rgba(230, 112, 15, 0.911),
+        0 0 60px rgba(230, 112, 15, 0.911),
+        0 0 70px rgba(230, 112, 15, 0.911),
+        0 0 80px rgba(230, 112, 15, 0.911),
+        0 1 90px rgba(230, 112, 15, 0.911);
+    }
+}
+
+
+.main-header {
+    justify-content: right;
+
+}
+
+.container section .content {
+    flex: 1 80%;
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container section .content h1 {
+    font-size: 15em;
+     -webkit-animation: glow 2s ease-in-out infinite alternate;
+     -moz-animation: glow 2s ease-in-out infinite alternate;
+     animation: glow 2s ease-in-out infinite alternate;
+    color: rgba(230, 112, 15, 0.911);
+    padding: 10px;
+
+}
+
+
+
+.container section h2 {
+    font-size: 3em;
+    background-color: rgba(41, 24, 10, 0.61);
+    color: rgb(230, 111, 15);
+
+}
+
+.container section .content p {
+    font-size: 1.8em;
+    line-height: 1.5em;
+
+}
+
+
+@media (max-width: 991px) {
+    .container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        transform: none !important;
+    }
+}
+
